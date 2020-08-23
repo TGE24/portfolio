@@ -11,12 +11,14 @@ export const Wrapper = styled("div")`
     .lines {
       border: 1px solid white;
       margin: 5px;
+      border-color: ${(props) => props.theme.body};
     }
   }
   @media (max-width: 767px) {
     justify-content: space-between;
     .burger-btn {
       display: block;
+      border-color: ${(props) => props.theme.body};
       position: relative;
       top: 17px;
     }
@@ -50,5 +52,43 @@ export const Links = styled("div")`
   }
   @media (max-width: 767px) {
     display: none;
+  }
+`;
+
+export const MobileLinks = styled("div")`
+  display: none;
+  @media (max-width: 767px) {
+    visibility: ${({ showMenu }) =>
+      showMenu ? "visible" : "hidden"};
+    opacity: ${({ showMenu }) => (showMenu ? 1 : 0)};
+    display: flex;
+    flex-direction: column;
+    background: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.body};
+    position: absolute;
+    width: inherit;
+    text-align: center;
+    height: -webkit-fill-available;
+    top: 0;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 600ms, visibility 600ms, height 300ms;
+    span {
+      position: absolute;
+      top: 30px;
+      font-size: 39px;
+      right: 0;
+    }
+    div {
+      margin: 0;
+      a {
+        color: ${(props) => props.theme.body};
+      }
+    }
+    .resume {
+      flex-basis: 100px;
+      font-size: x-large;
+    }
   }
 `;
