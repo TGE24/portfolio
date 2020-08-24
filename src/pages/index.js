@@ -7,14 +7,14 @@ import {
 
 import Home from "./home";
 import NotFound from "./404";
-// import Resume from "./resume";
+import Project from "./projects";
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/Resume" component={Resume} /> */}
+        <Route exact path="/projects" component={Project} />
         <Route component={NotFound} />
       </Switch>
     </Router>

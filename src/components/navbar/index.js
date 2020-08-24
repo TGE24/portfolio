@@ -11,11 +11,13 @@ const App = () => {
   return (
     <>
       <Wrapper>
-        <Logo
-          fill={themeState.gray ? "#F8F8F9" : "#1d1c21"}
-          stroke={themeState.gray ? "#1d1c21" : "#FFFFFF"}
-          color={themeState.gray ? "#1d1c21" : "#FFFFFF"}
-        />
+        <a href="/">
+          <Logo
+            fill={themeState.gray ? "#F8F8F9" : "#1d1c21"}
+            stroke={themeState.gray ? "#1d1c21" : "#FFFFFF"}
+            color={themeState.gray ? "#1d1c21" : "#FFFFFF"}
+          />
+        </a>
         <div
           className="burger-btn"
           onClick={() => setShowMenu(!showMenu)}
@@ -34,7 +36,7 @@ const App = () => {
             </a>
           </div>
           <div className="resume">
-            <a href="#">Projects</a>
+            <a href="/projects">Projects</a>
           </div>
           <div className="resume">
             <a href="#">Contact Me</a>
