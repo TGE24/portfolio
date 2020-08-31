@@ -69,7 +69,7 @@ const App = () => {
           </a>
         </div>
         <div className="resume">
-          <a href="#">Projects</a>
+          <a href="/projects">Projects</a>
         </div>
         <div className="resume">
           <a href="#">Contact Me</a>

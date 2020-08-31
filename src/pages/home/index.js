@@ -26,7 +26,7 @@ const Container = styled("div")`
       width: 90%;
       position: relative;
       .content-cont {
-        padding: 0 90px;
+        padding: 0 0 0 90px;
       }
       .header {
         display: flex;
