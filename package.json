@@ -5,6 +5,7 @@
   "author": "ThankGod Egbo",
   "license": "ISC",
   "main": "index.js",
+  "homepage": "https://tge24.github.io/",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
