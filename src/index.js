@@ -5,8 +5,8 @@ import { ThemeProvider } from "./theme/ThemeContext";
 import "semantic-ui-css/semantic.min.css";
 
 ReactDOM.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById("app")
+	<ThemeProvider>
+		<App />
+	</ThemeProvider>,
+	document.getElementById("app")
 );

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190.554" height="33.276" viewBox="0 0 190.554 33.276">
+    <defs>
+        <style>
+            .cls-1{fill:#414d55;font-size:28px;font-family:MuseoSans-700,Museo Sans;font-weight:700;letter-spacing:-.04em}.cls-2{fill:#285cdb}.cls-3{fill:#3067eb}
+        </style>
+    </defs>
+    <g id="Group_85" data-name="Group 85" transform="translate(-40.5 -407)">
+        <text id="Request_Ride" class="cls-1" data-name="Request Ride" transform="translate(78.054 433)">
+            <tspan x="0" y="0">Drive Master</tspan>
+        </text>
+        <g id="crossroads" transform="translate(40.5 407)">
+            <path id="Path_20" d="M34.319 30.159a4.159 4.159 0 1 0-4.159 4.159 4.164 4.164 0 0 0 4.159-4.159zm-4.159 1.386a1.386 1.386 0 1 1 1.386-1.386 1.388 1.388 0 0 1-1.387 1.387z" class="cls-2" data-name="Path 20" transform="translate(-13.522 -13.522)"/>
+            <path id="Path_21" d="M9.386 23.251H16.8a1.387 1.387 0 0 0 1.308-.926 6.963 6.963 0 0 1 4.22-4.22 1.387 1.387 0 0 0 .926-1.308V9.386a1.386 1.386 0 1 0-2.773 0v6.484a9.609 9.609 0 0 0-4.609 4.609H9.386a1.386 1.386 0 1 0 0 2.773z" class="cls-3" data-name="Path 21" transform="translate(-8 -8)"/>
+            <path id="Path_22" d="M22.325 39.146a6.963 6.963 0 0 1-4.22-4.22A1.387 1.387 0 0 0 16.8 34H9.386a1.386 1.386 0 0 0 0 2.773h6.484a9.609 9.609 0 0 0 4.609 4.609v6.483a1.386 1.386 0 0 0 2.773 0v-7.411a1.387 1.387 0 0 0-.927-1.308z" class="cls-3" data-name="Path 22" transform="translate(-8 -15.976)"/>
+            <path id="Path_23" d="M47.865 20.478h-6.483a9.609 9.609 0 0 0-4.609-4.609V9.386a1.386 1.386 0 0 0-2.773 0V16.8a1.387 1.387 0 0 0 .926 1.308 6.963 6.963 0 0 1 4.22 4.22 1.387 1.387 0 0 0 1.308.926h7.411a1.386 1.386 0 0 0 0-2.773z" class="cls-3" data-name="Path 23" transform="translate(-15.976 -8)"/>
+            <path id="Path_24" d="M47.865 34h-7.411a1.387 1.387 0 0 0-1.308.926 6.963 6.963 0 0 1-4.22 4.22A1.387 1.387 0 0 0 34 40.454v7.411a1.386 1.386 0 0 0 2.773 0v-6.483a9.609 9.609 0 0 0 4.609-4.609h6.483a1.386 1.386 0 0 0 0-2.773z" class="cls-3" data-name="Path 24" transform="translate(-15.976 -15.976)"/>
+        </g>
+    </g>
+</svg>
