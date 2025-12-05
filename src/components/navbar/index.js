@@ -27,7 +27,7 @@ const App = () => {
 				<Links>
 					<div className="resume">
 						<a
-							href="https://docs.google.com/document/d/1Y-VlYT7vBQYnk4GyDgSBQ8Xx_a3EJ282bcAV7d7lLeo/edit?usp=sharing"
+							href="https://docs.google.com/document/d/13_JICexGsVjDYUIjzKCl5jpbA48vcccx-zBTBNXR_aU/edit?usp=sharing"
 							target="_blank"
 						>
 							Résumé
@@ -62,7 +62,7 @@ const App = () => {
 				<span onClick={() => setShowMenu(!showMenu)}>X</span>
 				<div className="resume">
 					<a
-						href="https://docs.google.com/document/d/1Y-VlYT7vBQYnk4GyDgSBQ8Xx_a3EJ282bcAV7d7lLeo/edit?usp=sharing"
+						href="https://docs.google.com/document/d/13_JICexGsVjDYUIjzKCl5jpbA48vcccx-zBTBNXR_aU/edit?usp=sharing"
 						target="_blank"
 					>
 						Résumé

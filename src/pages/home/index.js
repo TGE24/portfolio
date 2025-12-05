@@ -89,7 +89,7 @@ const App = () => {
 						</div>
 					</div>
 				</div>
-				<Projects />
+				{/* <Projects /> */}
 			</Container>
 		</Wrapper>
 	);
