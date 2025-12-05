@@ -1,10 +1,46 @@
 import React from "react";
 import { useTheme } from "../../theme/ThemeContext";
-import { Wrapper, Links, MobileLinks } from "./styled";
+import { Wrapper, Links, MobileLinks, ThemeToggle } from "./styled";
 import Logo from "../logo";
-import Light from "../../assets/light.png";
-import Dark from "../../assets/dark.png";
 import { Link } from "react-scroll";
+
+const Sun = () => (
+	<svg
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		strokeWidth="2"
+		strokeLinecap="round"
+		strokeLinejoin="round"
+	>
+		<circle cx="12" cy="12" r="5"></circle>
+		<line x1="12" y1="1" x2="12" y2="3"></line>
+		<line x1="12" y1="21" x2="12" y2="23"></line>
+		<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+		<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+		<line x1="1" y1="12" x2="3" y2="12"></line>
+		<line x1="21" y1="12" x2="23" y2="12"></line>
+		<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+		<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+	</svg>
+);
+
+const Moon = () => (
+	<svg
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		strokeWidth="2"
+		strokeLinecap="round"
+		strokeLinejoin="round"
+	>
+		<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+	</svg>
+);
 
 const App = () => {
 	const themeState = useTheme();
@@ -14,9 +50,9 @@ const App = () => {
 			<Wrapper>
 				<a href="/">
 					<Logo
-						fill={themeState.gray ? "#F8F8F9" : "#1d1c21"}
-						stroke={themeState.gray ? "#1d1c21" : "#FFFFFF"}
-						color={themeState.gray ? "#1d1c21" : "#FFFFFF"}
+						fill={themeState.gray ? "#F8F8F9" : "#0F172A"}
+						stroke={themeState.gray ? "#0F172A" : "#FFFFFF"}
+						color={themeState.gray ? "#0F172A" : "#FFFFFF"}
 					/>
 				</a>
 				<div className="burger-btn" onClick={() => setShowMenu(!showMenu)}>
@@ -33,28 +69,17 @@ const App = () => {
 							Résumé
 						</a>
 					</div>
-					<div className="resume">
+					{/* <div className="resume">
 						<Link to="projects" spy={true} smooth={true}>
 							Projects
 						</Link>
-					</div>
+					</div> */}
 					<div className="resume">
 						<Link to="#">Contact Me</Link>
 					</div>
-					<div
-						onClick={() => themeState.toggle()}
-						style={{
-							cursor: "pointer",
-							position: "relative",
-							top: "-7px",
-						}}
-					>
-						{!themeState.gray ? (
-							<img src={Light} alt="light-mode" height={30} />
-						) : (
-							<img src={Dark} alt="light-mode" height={30} />
-						)}
-					</div>
+					<ThemeToggle onClick={() => themeState.toggle()}>
+						{!themeState.gray ? <Sun /> : <Moon />}
+					</ThemeToggle>
 				</Links>
 			</Wrapper>
 
@@ -68,30 +93,19 @@ const App = () => {
 						Résumé
 					</a>
 				</div>
-				<div className="resume">
+				{/* <div className="resume">
 					<Link to="projects" spy={true} smooth={true}>
 						Projects
 					</Link>
-				</div>
+				</div> */}
 				<div className="resume">
 					<Link to="#" spy={true} smooth={true}>
 						Contact Me
 					</Link>
 				</div>
-				<div
-					onClick={() => themeState.toggle()}
-					style={{
-						cursor: "pointer",
-						position: "relative",
-						top: "-7px",
-					}}
-				>
-					{!themeState.gray ? (
-						<img src={Light} alt="light-mode" height={30} />
-					) : (
-						<img src={Dark} alt="light-mode" height={30} />
-					)}
-				</div>
+				<ThemeToggle onClick={() => themeState.toggle()}>
+					{!themeState.gray ? <Sun /> : <Moon />}
+				</ThemeToggle>
 			</MobileLinks>
 		</>
 	);

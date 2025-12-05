@@ -7,13 +7,12 @@ import {
 	Description,
 	Image,
 	Container,
+	MobileSocials,
 } from "./styled";
 import Navbar from "../../components/navbar";
 import Arrow from "../../assets/arrow.png";
-import Pic from "../../assets/img.jpg";
-import Pic2 from "../../assets/img2.jpg";
+import Pic from "../../assets/2.jpeg";
 import { useTheme } from "../../theme/ThemeContext";
-import Projects from "../projects";
 
 const App = () => {
 	const themeState = useTheme();
@@ -30,8 +29,11 @@ const App = () => {
 						>
 							<VerticalLine />
 							<Socials>
-								<a href="https://twitter.com/TGE_24" target="_blank">
-									Twitter
+								<a
+									href="https://www.linkedin.com/in/thankgod-egbo/"
+									target="_blank"
+								>
+									LinkedIn
 								</a>
 							</Socials>
 							<Circle />
@@ -47,7 +49,7 @@ const App = () => {
 								<span>
 									<h5>ThankGod Egbo</h5>
 									<h6>
-										Software Developer <hr />
+										Senior Software Developer <hr />
 									</h6>
 								</span>
 								<span>
@@ -57,35 +59,43 @@ const App = () => {
 							<div className="content">
 								<Description>
 									<h1>
-										I am{" "}
-										<span
-											style={{ textTransform: "uppercase", fontSize: "2.6rem" }}
-										>
-											ThankGod Egbo
-										</span>
-										, a Frontend Developer and i'll love to work with you!
+										I am a Senior Frontend Developer and i'll love to work with
+										you!
 									</h1>
-									<h4>
-										View Résumé{" "}
-										<img
-											src={Arrow}
-											alt="Profile"
-											style={{ cursor: "pointer" }}
-										/>
-									</h4>
+									<a
+										href="https://docs.google.com/document/d/13_JICexGsVjDYUIjzKCl5jpbA48vcccx-zBTBNXR_aU/edit?usp=sharing"
+										target="_blank"
+									>
+										<h4>
+											View Résumé{" "}
+											<img
+												src={Arrow}
+												alt="Profile"
+												style={{ cursor: "pointer" }}
+											/>
+										</h4>
+									</a>
 								</Description>
-								<div
-									className="image-cont"
-									style={{
-										width: "50%",
-										display: "flex",
-										justifyContent: "flex-end",
-									}}
-								>
-									{themeState.gray && <Image src={Pic2} alt="My Header" />}
-									{!themeState.gray && <Image src={Pic} alt="My Header" />}
+								<div className="image-cont">
+									<Image src={Pic} alt="My Header" />
 								</div>
 							</div>
+							<MobileSocials>
+								<Circle />
+								<Socials>
+									<a
+										href="https://www.linkedin.com/in/thankgod-egbo/"
+										target="_blank"
+									>
+										LinkedIn
+									</a>
+								</Socials>
+								<Socials>
+									<a href="https://github.com/TGE24" target="_blank">
+										GitHub
+									</a>
+								</Socials>
+							</MobileSocials>
 						</div>
 					</div>
 				</div>

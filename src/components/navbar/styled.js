@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled("div")`
 	display: flex;
-	margin: auto;
-	width: 1200px;
+	margin: 0 auto;
+	width: 100%;
 	.burger-btn {
 		display: none;
 		border: 2px solid white;
@@ -94,6 +94,33 @@ export const MobileLinks = styled("div")`
 		.resume {
 			flex-basis: 100px;
 			font-size: x-large;
+		}
+	}
+`;
+
+export const ThemeToggle = styled("button")`
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: ${(props) => props.theme.body};
+	transition: all 0.3s ease;
+
+	svg {
+		transition: transform 0.3s ease;
+	}
+
+	&:hover svg {
+		transform: rotate(20deg);
+	}
+
+	@media (max-width: 767px) {
+		svg {
+			width: 28px;
+			height: 28px;
 		}
 	}
 `;
