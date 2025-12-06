@@ -1,26 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Faster+One&display=swap");
 
 .path {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: dash 5s linear alternate infinite;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: dash 5s linear alternate infinite;
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 450;
-  }
-  to {
-    stroke-dashoffset: 240;
-  }
+	from {
+		stroke-dashoffset: 450;
+	}
+	to {
+		stroke-dashoffset: 240;
+	}
 }
 
 .text {
-  font-family: "Faster One", cursive;
-}
-@media (max-width: 767px) {
-  .logo-cont {
-    position: relative;
-    left: -40px;
-  }
+	font-family: "Faster One", cursive;
 }
