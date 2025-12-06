@@ -1,5 +1,3 @@
-import "./index.css";
-
 const Logo = () => {
 	return (
 		<svg
@@ -11,7 +9,7 @@ const Logo = () => {
 		>
 			<g>
 				<rect
-					className="path"
+					className="logo-path"
 					x="30"
 					y="15"
 					width="80"
@@ -27,7 +25,7 @@ const Logo = () => {
 					y="60"
 					fill={"#0F172A"}
 					fontSize="2.5rem"
-					className="text"
+					className="logo-text"
 					textAnchor="middle"
 					dominantBaseline="middle"
 				>

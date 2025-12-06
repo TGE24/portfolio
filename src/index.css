@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Faster+One&display=swap");
 @import "tailwindcss";
 
 html {
@@ -59,4 +60,23 @@ body {
 
 .animate-fadeIn {
 	animation: fadeIn 0.5s ease-out forwards;
+}
+
+.logo-path {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 450;
+	}
+	to {
+		stroke-dashoffset: 240;
+	}
+}
+
+.logo-text {
+	font-family: "Faster One", cursive;
 }
