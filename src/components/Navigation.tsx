@@ -34,7 +34,7 @@ const Navigation = () => {
 				borderRadius: isMobile || !isScrolled ? "0" : "9999px",
 				transition:
 					"width 0.7s ease, left 0.7s ease, transform 0.7s ease, border-radius 0.7s ease",
-				backgroundColor: isScrolled && !isMobile ? "white" : "transparent",
+				backgroundColor: isScrolled && !isMobile ? "#faf1f3" : "transparent",
 				top: isScrolled && !isMobile ? "20px" : "0px",
 				paddingBlock: isScrolled && !isMobile ? "10px" : "20px",
 			}}
@@ -45,7 +45,7 @@ const Navigation = () => {
 					href="https://docs.google.com/document/d/13_JICexGsVjDYUIjzKCl5jpbA48vcccx-zBTBNXR_aU/edit?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="underline-animation text-[#888888]"
+					className="underline-animation text-[#575555]"
 				>
 					Résumé
 				</a>
