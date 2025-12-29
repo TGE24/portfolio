@@ -71,7 +71,7 @@ const Projects = () => {
 		<div className="px-6 py-20">
 			{/* <h2 className="text-[40px] font-semibold mb-12">My Work</h2> */}
 			<HybridScrollWrapper>
-				<div className="flex gap-6">
+				<div className="flex flex-col md:flex-row gap-6">
 					<div className=" w-full h-[300px] md:w-[860px] md:h-[586px] flex items-center justify-center shrink-0">
 						<h1 className="text-[80px] font-semibold tracking-tighter">
 							My Work
