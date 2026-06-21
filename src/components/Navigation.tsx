@@ -42,7 +42,7 @@ const Navigation = () => {
 			<Logo />
 			<div className="flex gap-5 text-[18px] font-medium items-center">
 				<a
-					href="https://docs.google.com/document/d/13_JICexGsVjDYUIjzKCl5jpbA48vcccx-zBTBNXR_aU/edit?usp=sharing"
+					href="https://docs.google.com/document/d/1C4nc_NAkLWGgSkH6IjdkYT83c2_vAYsqcNxGGb2sBvg/edit?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="underline-animation text-[#575555]"
